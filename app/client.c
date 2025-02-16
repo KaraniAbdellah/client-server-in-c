@@ -56,7 +56,7 @@ int main(int argc, char *argv[]) {
         n = read(sockfd, buffer, 255);
         if (n < 0) error("Error on Reading");
 
-        printf("Server: %s", buffer);
+       printf("\033[1;31mServer:\033[0m %s", buffer);
 
         int i = strncmp("Bye", buffer, 3);
         if (i == 0) break;

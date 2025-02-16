@@ -55,7 +55,7 @@ int main(int argc, char *argv[]) {
         bzero(buffer, 255);
         n = read(newsockfd, buffer, 255);
         if (n < 0) error("Error on Reading.");
-        printf("Client: %s", buffer);
+        printf("\033[1;33mClient:\033[0m %s", buffer);
         bzero(buffer, 255);
         fgets(buffer, 255, stdin);
         
