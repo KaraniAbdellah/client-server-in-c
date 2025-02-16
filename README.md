@@ -28,6 +28,11 @@ gcc client.c -o client
 ./client 127.0.0.1 9898
 ```
 
+### Resources
+<a href="https://www.youtube.com/playlist?list=PLPyaR5G9aNDvs6TtdpLcVO43_jvxp4emI">youtube</a>
+<a href="https://www.geeksforgeeks.org/socket-in-computer-network/">geeksforgeeks</a>
+
+
 
 **made with love by <a href="https://www.linkedin.com/in/abdellah-karani-965928294/">abdellah karani</a>**
 
