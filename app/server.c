@@ -1,4 +1,7 @@
 // Start Code The Server Side
+/*
+    filename portno
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -19,7 +22,7 @@ int main(int argc, char *argv[]) {
         exit(0);
     }
 
-    int sockfd, newsockfd, portno;
+    int sockfd, newsockfd, portno, n;
     char buffer[255];// message must contain just 254 character
 
     struct sockaddr_in serv_addr, cli_addr;
@@ -50,7 +53,7 @@ int main(int argc, char *argv[]) {
 
     while(1) {
         bzero(buffer, 255);
-        int n = read(newsockfd, buffer, 255);
+        n = read(newsockfd, buffer, 255);
         if (n < 0) error("Error on Reading.");
         printf("Client: %s", buffer);
         bzero(buffer, 255);
